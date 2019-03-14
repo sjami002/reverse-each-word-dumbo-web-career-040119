@@ -1,7 +1,7 @@
-sentence = "I am a happy person!"
-array = sentence.split(//)
-
-def reverse_each_word(array)
-  array.each do {|word| puts word.reverse}
+def reverse_each_word(sentence)
+  array = sentence.split(" ")
+  newArr = []
+  newArr = array.collect {|word| puts word.reverse}
+  newArr.join(" ")
   end
 end
